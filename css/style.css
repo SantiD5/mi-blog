@@ -29,7 +29,7 @@ header .header-icons-container {
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: #47cfac;
+  background-color: #000000;
 }
 header .header-icons-container .icons {
   width: 300px;
@@ -45,10 +45,16 @@ header .icons span {
   color: white;
 }
 nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   height: 90px;
 }
+nav ul {
+  list-style: none;
+}
+
 nav .nav-logo-container {
   margin-left: 50px;
 }
@@ -60,6 +66,7 @@ nav .profile-link {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  align-content: space-between;
   margin-right: 50px;
 }
 nav .profile-link a {
@@ -71,7 +78,7 @@ nav .profile-link a {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   height: 100%;
-  background-image: url("../assets/Cover.png");
+  background-image: url("../assets/walling-XLqiL-rz4V8-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
